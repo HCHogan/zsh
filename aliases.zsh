@@ -2,6 +2,7 @@
 ## Aliases
 ##
 
+alias make="make -j4"
 alias settings='gnome-control-center'
 alias run='pnpm run'
 alias c="clear"
