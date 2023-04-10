@@ -2,6 +2,7 @@
 ## Aliases
 ##
 
+alias nvid="env -u WAYLAND_DISPLAY neovide"
 alias make="make -j4"
 alias settings='gnome-control-center'
 alias run='pnpm run'
