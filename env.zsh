@@ -3,11 +3,19 @@
 ##
 
 export PNPM_HOME="$HOME/.local/share/pnpm"
+export CXXFLAGS="-std=c++20"
 export PATH="$PNPM_HOME:$PATH"
 export PATH="$HOME/.scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/Applications/ARM/bin:$PATH"
+export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+# export PATH="$HOME/Downloads/nvim-macos/bin:$PATH"
+# export PATH="/Applications/ARM/bin"
 export GPG_TTY="${TTY:-$(tty)}"
+export HOMEBREW_NO_INSTALL_FROM_API=1
+export HDF5_DIR="/opt/homebrew/opt/hdf5"
 
 export SUDO_PROMPT="passwd: "
 export TERMINAL="wezterm"
@@ -30,6 +38,21 @@ export XDG_DOCUMENTS_DIR="$HOME/Documents"
 export XDG_MUSIC_DIR="$HOME/Music"
 export XDG_PICTURES_DIR="$HOME/Pictures"
 export XDG_VIDEOS_DIR="$HOME/Videos"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/opt/homebrew/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/opt/homebrew/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/homebrew/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 
 ## Comment this to use normal manpager
 export MANPAGER='nvim +Man! +"set nocul" +"set noshowcmd" +"set noruler" +"set noshowmode" +"set laststatus=0" +"set showtabline=0" +"set nonumber"'

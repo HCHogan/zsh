@@ -2,6 +2,9 @@
 ## Aliases
 ##
 
+alias lg="lazygit"
+alias ra="joshuto"
+alias nvid="neovide --multigrid --frame buttonless"
 alias make="make -j4"
 alias settings='gnome-control-center'
 alias run='pnpm run'
@@ -29,7 +32,7 @@ alias pacupd="pacman -Qu"
 alias parucheck="paru -Gp"
 alias cleanpac='sudo pacman -Rns $(pacman -Qtdq); paru -c'
 alias installed="grep -i installed /var/log/pacman.log"
-alias ls="exa --color=auto --icons"
+alias ls="eza --color=auto --icons"
 alias l="ls -l"
 alias la="ls -a"
 alias lla="ls -la"
