@@ -3,20 +3,28 @@
 ##
 
 export PNPM_HOME="$HOME/.local/share/pnpm"
-export CXXFLAGS="-std=c++20"
 export PATH="$PNPM_HOME:$PATH"
 export PATH="$HOME/.scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/opt/riscv-gnu-toolchain/bin:$PATH"
+export PATH="/opt/homebrew/opt/gcc/bin:$PATH"
 export PATH="/Applications/ARM/bin:$PATH"
 export PATH="/opt/homebrew/anaconda3/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
-# export PATH="$HOME/Downloads/nvim-macos/bin:$PATH"
-# export PATH="/Applications/ARM/bin"
+export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
+export PATH="/opt/llvm/bin:$PATH"
+export PATH="/opt/homebrew/opt/curl/bin:$PATH"
+export PATH="/Users/hank/.ghcup/ghc/9.4.8/bin:$PATH"
+eval "$(jenv init -)"
 export GPG_TTY="${TTY:-$(tty)}"
 export HOMEBREW_NO_INSTALL_FROM_API=1
 export HDF5_DIR="/opt/homebrew/opt/hdf5"
 
+# export OPENAI_API_BASE="https://api.chatanywhere.com.cn/v1"
+export OPENAI_API_KEY="sk-JjyQHyAkZoL8np0S6J1sEufWMOpwa6qWfEY2qyxdnRd5afPe"
+export OPENAI_API_HOST=api.chatanywhere.com.cn
 export SUDO_PROMPT="passwd: "
 export TERMINAL="wezterm"
 export BROWSER="firefox"
