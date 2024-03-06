@@ -1,11 +1,12 @@
 ##
 ## Aliases
 ##
-
+alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
 alias lg="lazygit"
+alias lvim="NVIM_APPNAME=lazyvim nvim"
 alias ra="joshuto"
-alias nvid="neovide --multigrid --frame buttonless"
-alias make="make -j4"
+alias nvid="neovide --frame buttonless --title-hidden"
+# alias make="make -j4"
 alias settings='gnome-control-center'
 alias run='pnpm run'
 alias c="clear"
