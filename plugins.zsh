@@ -40,12 +40,12 @@ zinit ice from"gh-r" as"command"
 zinit light junegunn/fzf-bin
 
 # EXA
-zinit ice wait lucid from"gh-r" as"program" mv"bin/exa* -> exa"
-zinit light ogham/exa
+# zinit ice wait lucid from"gh-r" as"program" mv"bin/exa* -> exa"
+# zinit light ogham/exa
 
 # BAT
-zinit ice wait lucid from"gh-r" as"program" mv"*/bat -> bat" atload"export BAT_THEME='Nord'"
-zinit light sharkdp/bat
+# zinit ice wait lucid from"gh-r" as"program" mv"*/bat -> bat" atload"export BAT_THEME='Nord'"
+# zinit light sharkdp/bat
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
