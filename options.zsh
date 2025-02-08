@@ -33,11 +33,12 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 # brew
-# Added by OrbStack: command-line tools and integration
-# source ~/.orbstack/shell/init.zsh 2>/dev/null || :
-#
-#   export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles #ckbrew
-#   eval $(/opt/homebrew/bin/brew shellenv) #ckbrew
+if [ "$(uname)" = "Darwin" ]; then 
+  # Added by OrbStack: command-line tools and integration
+  source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+  export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles #ckbrew
+  eval $(/opt/homebrew/bin/brew shellenv) #ckbrew
+fi
 
 # Autosuggestion
 ZSH_AUTOSUGGEST_USE_ASYNC="true"
