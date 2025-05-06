@@ -4,6 +4,8 @@
 alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
 alias lg="lazygit"
 alias hvim="NVIM_APPNAME=hvim nvim"
+alias lvim="NVIM_APPNAME=lazyvim nvim"
+alias dvim="NVIM_APPNAME=dvim nvim"
 alias ra="joshuto"
 alias nvid="neovide --frame buttonless --title-hidden"
 # alias make="make -j4"
