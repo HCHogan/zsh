@@ -1,6 +1,7 @@
 ##
 ## Aliases
 ##
+alias getidf="source ~/esp/esp-idf/export.sh"
 alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
 alias lg="lazygit"
 alias hvim="NVIM_APPNAME=hvim nvim"
