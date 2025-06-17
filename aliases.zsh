@@ -1,6 +1,7 @@
 ##
 ## Aliases
 ##
+alias nvimdiff="nvim -d"
 alias p="git add . && git commit -am 'update' && git push -u origin main"
 alias getidf="source ~/esp/esp-idf/export.sh"
 alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
