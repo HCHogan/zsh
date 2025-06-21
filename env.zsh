@@ -4,6 +4,7 @@
 
 export PATH="$HOME/.moon/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 eval "$(direnv hook zsh)"
 # export PNPM_HOME="$HOME/.local/share/pnpm"
 # export PATH="$PNPM_HOME:$PATH"
