@@ -1,11 +1,24 @@
 ##
 ## Aliases
 ##
-alias nvimdiff="nvim -d"
-alias jd="jj desc"
+
+alias jdesc="jj desc"
 alias jn="jj new"
 alias jst="jj st"
 alias jl="jj log"
+alias jc="jj commit"
+alias ja="jj abandon"
+alias jsq="jj squash"
+alias jd="jj diff"
+alias je="jj edit"
+alias jne="jj next"
+
+alias jgi="jj git init"
+alias jgp="jj git push"
+alias jgf="jj git fetch"
+alias jgcl="jj git clone --colocate"
+
+alias nvimdiff="nvim -d"
 alias p="git add . && git commit -am 'update' && git push -u origin main"
 alias getidf="source ~/esp/esp-idf/export.sh"
 alias brew86="arch -x86_64 /usr/local/homebrew/bin/brew"
