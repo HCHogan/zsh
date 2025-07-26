@@ -2,6 +2,7 @@
 ## PATH & ENV Var
 ##
 
+export GEMINI_API_KEY="AIzaSyC1H0uQy9yjjFszZgj6d2yGEPpBU9wIhDc"
 export PATH="$HOME/.moon/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
