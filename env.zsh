@@ -2,13 +2,20 @@
 ## PATH & ENV Var
 ##
 
-export GEMINI_API_KEY="AIzaSyC1H0uQy9yjjFszZgj6d2yGEPpBU9wIhDc"
 export PATH="$HOME/.moon/bin:$PATH"
 export PATH="$HOME/.ghcup/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-eval "$(direnv hook zsh)"
-source $HOME/.elan/env
+
+# direnv
+command -v direnv >/dev/null 2>&1 && eval "$(direnv hook zsh)"
+
+# elan
+if [ -f "$HOME/.elan/env" ]; then
+  # shellcheck source=/dev/null
+  . "$HOME/.elan/env"
+fi
+
 # export PNPM_HOME="$HOME/.local/share/pnpm"
 # export PATH="$PNPM_HOME:$PATH"
 # export PATH="$HOME/.scripts:$PATH"
@@ -33,15 +40,15 @@ source $HOME/.elan/env
 # export OPENAI_API_KEY="sk-JjyQHyAkZoL8np0S6J1sEufWMOpwa6qWfEY2qyxdnRd5afPe"
 # export OPENAI_API_HOST=api.chatanywhere.com.cn
 # export SUDO_PROMPT="passwd: "
-# export TERMINAL="wezterm"
+export TERMINAL="ghostty"
 # export BROWSER="firefox"
 # export VISUAL="nvim"
-# export EDITOR="nvim"
+export EDITOR="nvim"
 
-# export XDG_CONFIG_HOME="$HOME/.config"
-# export XDG_CACHE_HOME="$HOME/.cache"
-# export XDG_DATA_HOME="$HOME/.local/share"
-# export XDG_STATE_HOME="$HOME/.local/state"
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_STATE_HOME="$HOME/.local/state"
 # export XDG_CONFIG_DIRS="/etc/xdg"
 # export XDG_DATA_DIRS="/usr/local/share:/usr/share:/var/lib/flatpak/exports/share:$XDG_DATA_HOME/flatpak/exports/share"
 # export XDG_RUNTIME_DIR="/run/user/$(id -u)"
