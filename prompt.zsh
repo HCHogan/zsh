@@ -3,6 +3,7 @@
 ##
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 # Load starship
 # zinit ice as'command' from'gh-r' \
 #   atload'export STARSHIP_CONFIG=$XDG_CONFIG_HOME/starship/starship.toml; eval $(starship init zsh)' \
