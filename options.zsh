@@ -41,6 +41,7 @@ if [ "$(uname)" = "Darwin" ]; then
     eval "$(/usr/local/bin/brew shellenv)"
   else
     eval "$(/opt/homebrew/bin/brew shellenv)"
+    export PATH="/opt/homebrew/opt/rustup/bin:$PATH"
   fi
 fi
 
