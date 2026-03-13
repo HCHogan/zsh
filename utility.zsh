@@ -105,11 +105,13 @@ function toppy() {
     history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n 21
 }
 
-function cd() {
-	# builtin cd "$@" && command ls --color=auto -F
-	builtin cd "$@" && eza --color=auto --icons
-	# --group-directories-first
+autoload -Uz add-zsh-hook
+
+_auto_eza_ls() {
+  [[ -o interactive ]] && eza --color=auto --icons
 }
+
+add-zsh-hook chpwd _auto_eza_ls
 
 function git-svn(){
   if [[ ! -z "$1" && ! -z "$2" ]]; then
