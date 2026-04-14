@@ -32,10 +32,14 @@ HISTFILE="$XDG_CACHE_HOME/zsh/.zhistory"
 HISTSIZE=10000
 SAVEHIST=10000
 
-# brew
 if [ "$(uname)" = "Darwin" ]; then 
   # Added by OrbStack: command-line tools and integration
   source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+
+  # matlab alias
+  alias matlabcli="/Applications/MATLAB_R2025a.app/bin/matlab -nodesktop -nosplash"
+
+  # brew
   export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles #ckbrew
   if [ "$(uname -m)" = "x86_64" ]; then
     eval "$(/usr/local/bin/brew shellenv)"
